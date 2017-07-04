@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/bijia.css"/>
+</head>
+<body>
+<!--头部开始-->
+<header class="page-header">
+    <div class="left">
+        <h1><a href=""><img src="./images/header_logo.png" alt="liele"/></a></h1>
+    </div>
+    <a class="downLoad" href="#"></a>
+</header>
+<!--头部结束-->
+<!--搜索区-->
+<section class="page-searchBlock">
+    <form action="" id="form">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <input type="search" placeholder="请输入你想比较的商品"/>
+        <input type="button" value="搜索"/>
+    </form>
+</section>
+
+<!--导航区-->
+<section class="bijia-nav">
+    <!--标题模板引擎-->
+    <script type="text/template" id="getcategorybyid_bijia">
+        {{each result as v i }}
+        <span>
+            <a href="index.html">首页</a>
+            >
+            <a href="category.html">{{v.category}}</a>
+            >
+            <a class="nav_title" href="javascript:;"></a>
+            >
+        </span>
+        <a href="javascript:;" class="choose">筛选</a>
+        {{/each}}
+    </script>
+</section>
+<!--导航区-->
+
+<!--产品区域-->
+<section class="bijia_pro">
+    <script type="text/template" id="getproduct_two">
+        <div class="product">
+            <h3>{{result[0].productName}}</h3>
+            {{#result[0].productImg}}
+            <img class="collect" width="39px" src="http://www.zuyushop.com/wap/images/sc.jpg" alt=""/>
+        </div>
+        <ul class="shop_title">
+            <li>比价购买</li>
+            <li>产品参数</li>
+            <li>评价2322</li>
+        </ul>
+        {{#result[0].bjShop}}
+        <p>
+            * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+        </p>
+    </script>
+</section>
+<!--产品区域-->
+
+<!--产品评论区-->
+<section class="bijiao_comment">
+    <h3>网友评价</h3>
+    <div class="container">
+
+    </div>
+</section>
+<!--产品评论区-->
+<script type="text/template" id="getproductcom">
+    {{each result as v i }}
+        <div class="comment">
+            <div class="title clearfix">
+                <p>
+                    <span>
+                        {{v.comName}}
+                    </span>
+                    <i>
+                        {{v.comTime}}
+                    </i>
+                </p>
+                <b class="clearfix">
+                    {{v.comFrom}}
+                </b>
+            </div>
+            <div class="context">
+                {{v.comContent}}
+            </div>
+        </div>
+    {{/each}}
+    <p>
+        <a class="more" href="javascript:;">查看更多评价</a>
+    </p>
+</script>
+
+<!--尾部区域-->
+<footer class="clearfix">
+    <ul class="clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#">返回顶部</a></li>
+    </ul>
+    <p><a href="#">手机APP下载</a>
+        <a href="">慢慢买手机版</a>
+        -- 掌上比价平台
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--尾部区域-->
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template.js"></script>
+<script src="js/common.js"></script>
+<script src="js/common/route.js"></script>
+<script src="js/bijia.js"></script>
+</body>
+</html>

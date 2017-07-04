@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/gsproduct.css"/>
+    <link rel="stylesheet" href="./lib/icon-font/search/iconfont.css"/>
+</head>
+<body>
+<!--头部开始-->
+<header class="gsp-header">
+    <div class="left">
+        <a href="index.html"><img src="images/icback.svg" alt=""/></a>
+        <h2>国内折扣</h2>
+    </div>
+    <a class="downLoad" href="#"></a>
+</header>
+<!--头部结束-->
+
+<!--下拉标题块-->
+<section class="gsp_nav clearfix">
+    <ul class="clearfix">
+        <li>
+            <a class="gsp_shop" href="javascript:;">
+                京东
+                <!--下角标-->
+                <b class="iconfont icon-sanjiao"></b>
+            </a>
+        </li>
+        <li>
+            <a class="gsp_area" href="javascript:;">
+                华北
+                <!--下角标-->
+                <b class="iconfont icon-sanjiao"></b>
+            </a>
+        </li>
+        <li>
+            <a class="gsp_price" href="javascript:;">
+                全部价格
+                <!--下角标-->
+                <b class="iconfont icon-sanjiao"></b>
+            </a>
+        </li>
+
+    </ul>
+    <!--搜索的字体图标-->
+    <a href="javascript:;" class="iconfont icon-search nav_search">
+
+    </a>
+</section>
+<!--下拉标题块-->
+
+<!--动态渲染下拉菜单-->
+<section class="open_list">
+    <!--//京东下拉-->
+    <div class="getgsshop hide">
+        <ul></ul>
+        <script type="text/template" id="getgsshop">
+            {{each result as v i }}
+            <li shopId="{{v.shopId}}" >
+                <a href="javascript:;">
+                    {{v.shopName}}
+                    <b class="hide">√</b>
+                </a>
+            </li>
+            {{/each}}
+        </script>
+    </div>
+    <!--//京东下拉-->
+    <!--//地区下拉-->
+    <div class="getgsshoparea hide">
+        <ul></ul>
+        <script type="text/template" id="getgsshoparea">
+            {{each result as v i }}
+            <li  areaId="{{v.areaId}}">
+                <a href="javascript:;">
+                    {{v.areaName}}
+                    <b class="hide">√</b>
+                </a>
+            </li>
+            {{/each}}
+        </script>
+    </div>
+    <!--//地区下拉-->
+    <!--//价格下拉-->
+    <div class="getgs_sprice hide">
+        <ul>
+            <li>
+                <a  href="">
+                   全部价格
+                    <b>√</b>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <!--//价格下拉-->
+</section>
+<!--动态渲染下拉菜单-->
+
+<!--产品动态生成布局-->
+<section class="getgsproduct clearfix">
+    <ul></ul>
+    <script type="text/template" id="getgsproduct">
+        {{each result as v i }}
+        <li>
+            <!--<a href="inlanddiscountproduct.html?productid={{v.productId}}">-->
+            <a href="javascript:;">
+                <img src="{{v.productImg}}" alt=""/>
+                <p>
+                    {{v.productName}}
+                </p>
+                <div>
+                    <i>{{v.productPrice}}</i>
+                    <button>去凑单</button>
+                </div>
+
+            </a>
+        </li>
+        {{/each}}
+    </script>
+</section>
+<!--产品动态生成布局-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--尾部区域-->
+<footer class="clearfix">
+    <ul class="clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#">返回顶部</a></li>
+    </ul>
+    <p><a href="#">手机APP下载</a>
+        <a href="">慢慢买手机版</a>
+        -- 掌上比价平台
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--尾部区域-->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template.js"></script>
+<script src="js/common.js"></script>
+<script src="js/common/route.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

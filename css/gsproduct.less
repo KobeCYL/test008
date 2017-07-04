@@ -1,0 +1,195 @@
+@import "var";
+
+//头部开始
+header.gsp-header {
+  height: 45px;
+  background-color: @color;
+  padding: 0px 42px 0px 16px;
+  div.left {
+    a {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    h2 {
+      height: 45px;
+      font-size: 20px;
+      line-height: 45px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  //下载按钮
+  a.downLoad {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    height: 34px;
+    width: 34px;
+    background: url("../images/header_app.png") no-repeat;
+    //-webkit-background-size: 50%;
+    background-size: 100%;
+  }
+}
+
+//头部结束
+
+//<!--下拉标题块-->
+section.gsp_nav {
+  width: 100%;
+  position: relative;
+  padding-right: 46px;
+  border-bottom: 1px solid @border;
+  ul {
+    width: 100%;
+    li {
+      width: 33%;
+      float: left;
+      a {
+        display: block;
+        height: 37px;
+        font-size: 20px;
+        line-height: 37px;
+        text-align: center;
+        b {
+          display: inline-block;
+          height: 15px;
+          width: 15px;
+        }
+      }
+    }
+  }
+  a.nav_search {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    height: 37px;
+    width: 37px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 46px;
+    border-left: 1px solid @border;
+  }
+}
+
+//<!--下拉标题块-->
+
+//动态渲染下拉菜单-- >
+section.open_list {
+  width: 100%;
+  position: relative;
+  //京东下拉-->
+  .getgsshop,.getgsshoparea,.getgs_sprice{
+    z-index: 3;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    ul{
+      width: 100%;
+      li{
+        width: 100%;
+        &:nth-child(1){
+          border-top: 1px solid @border;
+        }
+        a{
+          width: 100%;
+          padding-left: 20px;
+          display: block;
+          height: 37px;
+          line-height: 37px;
+          text-align: left;
+          background-color: #fff;
+          border-bottom: 1px solid @border;
+          padding-right: 20px;
+          b{
+            float: right;
+            color: @color;
+            line-height: 37px;
+          }
+        }
+      }
+    }
+  }
+}
+//动态渲染下拉菜单-- >
+
+
+//两排li格式的产品样式
+section.getgsproduct {
+  max-width: 960px;
+  //background-color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  margin: 0px auto;
+  ul {
+    width: 100%;
+    padding: 4px;
+    overflow: hidden;
+    li {
+      float: left;
+      display: table-cell;
+      padding: 10px 0 0 10px;
+      text-align: center;
+      vertical-align: middle;
+      width: 50%;
+      background: #FFFFFF;
+      border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+      -webkit-border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border-top-width: 0;
+      overflow: hidden;
+      &:nth-child(2n){
+        padding-right: 10px;
+      }
+      a {
+        display: inline-block;
+        width: 100%;
+        border: 1px solid #eeeeee;
+        //margin:4px;
+        img {
+          height: 140px;
+        }
+        p {
+          text-align: left;
+          text-indent: 5px;
+          line-height: 20px;
+          color: #000;
+          word-break: break-all;
+          height: 40px;
+          overflow: hidden;
+        }
+        div{
+          position: relative;
+          text-align: left;
+          text-indent: 5px;
+
+          i {
+            color: @color;
+            font-size: 15px;
+          }
+          button{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 62px;
+            height: 27px;
+            line-height: 27px;
+            text-align: center;
+            background-color:   @color;
+            color: #fff;
+            outline: none;
+          }
+        }
+
+
+
+      }
+    }
+  }
+}
+//两排li格式的产品样式
+

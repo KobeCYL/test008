@@ -1,0 +1,210 @@
+@import "var";
+
+
+//头部开始
+header.mon-duct-header{
+  height: 45px;
+  background-color: @color;
+  padding: 0px 42px 0px 16px;
+  div.left{
+    a{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    h2{
+      height: 45px;
+      font-size: 20px;
+      line-height: 45px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center  ;
+    }
+  }
+  //下载按钮
+  a.downLoad{
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    height: 34px;
+    width: 34px;
+    background: url("../images/header_app.png") no-repeat;
+    //-webkit-background-size: 50%;
+    background-size: 100%;
+  }
+}
+//头部结束
+//产品设置
+section.mon-duct-container{
+  padding: 20px 10px 10px 20px;
+  width: 100%;
+
+  //info页面样式
+  div.info{
+    width: 100%;
+
+    h1{
+      line-height: 20px;
+      color: #585550;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    span{
+      color: #97a1a3;
+    }
+    p.info1{
+      img{
+        float: right;
+        width: 120px;
+        overflow: hidden;
+      }
+      font-size: 15px;
+      color: #2c292d;
+      margin-top: 15px;
+    }
+    p.info2{
+      overflow: hidden;
+      color: #2c292d;
+    }
+    div.img{
+      text-align: center;
+      img{
+      }
+    }
+    div.productCity{
+      width: 100%;
+      text-align: center;
+      ul{
+        max-width: 350px;
+        width: 50%;
+        display: inline-block;
+        padding: 15px;
+        box-shadow: 1px 1px 3px 3px gray;
+        li{
+          border-bottom: 1px dashed #dedede;
+          a{
+            display: block;
+            font-size: 12px;
+            padding: 3px;
+            span{
+              display: block;
+              text-indent: 10px;
+              text-align: left;
+              strong{
+                float: right;
+                color: #f38921;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    div.fixed{
+      padding:20px;
+      width: 100%;
+      a{
+        background-color:  #ff9000;
+        color: #fff;
+        display: block;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+      }
+    }
+    div.imgSaoMa{
+      text-align: center;
+      img{
+
+      }
+    }
+    div.cu-content-pl{
+      margin-top: 30px;
+      div.tit{
+        font-size: 15px;
+        color: #000;
+        margin-bottom: 10px;
+      }
+      div.reply{
+        div.form{
+          position: relative;
+          text-align: center;
+          //padding: 0 16px;
+          width: 100%;
+          textarea{
+            display: block;
+            height: 110px;
+            width: 100%;
+          }
+          input{
+
+          }
+          div.ctrl{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            input{
+              width: 100px;
+              height: 36px;
+              line-height: 36px;
+              text-align: center;
+              background-color: @color;
+              color: #fff;
+              font-size: 15px;
+            }
+          }
+        }
+        div.tit{
+          font-size: 16px;
+          padding: 6px 8px;
+        }
+      }
+      div.list{
+        ul{
+          li{
+            padding: 18px 10px;
+            background-color: #FFFFFF;
+            div.userimg{
+              width: 40px;
+              float: left;
+              overflow: hidden;
+              img{
+                width: 40px;
+                background-position: top;
+                border-radius: 20px;
+                height: 40px;
+              }
+            }
+            div.con{
+              overflow: hidden;
+              padding-left: 10px;
+              div.name{
+                margin-bottom: 6px;
+                color: #2e8b01;
+                font-size: 14px;
+                div.username{
+                  color: #5997c0;
+                  font-size: 13px !important;
+                  float: left;
+                }
+                div.time{
+                  color: #999999;
+                  font-size: 13px !important;
+                  float: right;
+                }
+              }
+              div.content{
+                word-break: break-all;
+                font-size: 15px !important;
+                color: #606060;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

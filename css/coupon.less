@@ -1,0 +1,75 @@
+@import "var";
+
+//头部开始
+header.cpn-header{
+  height: 45px;
+  background-color: #f4483e;
+  padding: 0px 42px 0px 16px;
+  position: relative;
+  div.left{
+    a{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    h2{
+      height: 45px;
+      font-size: 20px;
+      line-height: 45px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center  ;
+    }
+  }
+  //下载按钮
+  a.downLoad{
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    height: 34px;
+    width: 34px;
+    background: url("../images/header_app.png") no-repeat;
+    //-webkit-background-size: 50%;
+    background-size: 100%;
+  }
+}
+//头部结束
+
+
+//导航菜单
+section.cpn_nav{
+  border-top: 10px solid #f1f1f1;
+  width: 100%;
+  border-bottom:5px solid #f1f1f1;
+  padding-top: 7px;
+  padding-bottom: 12px;
+  ul{
+    width: 100%;
+    li{
+      padding-top: 17px;
+      padding-left: 10px;
+      width: 100/3%;
+      max-width: 118px;
+      float: left;
+      //&:nth-child(3n){
+      //  padding-right: 10px;
+      //}
+      a{
+        border: 1px solid #eee;
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin-bottom: 8px;
+        img{
+          width: 50px;
+        }
+        p{
+          text-align: center;
+        }
+      }
+
+    }
+  }
+}
+
+//导航菜单

@@ -1,0 +1,190 @@
+@import "var";
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h6,p,input,ul,li,a{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h6,i,b,strong,em{
+  font-size: 100%;
+  line-height: normal;
+  font-family: "SimSun", "microsoft yahei";
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+  color: #000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+a:hover{
+  color: red;
+}
+button,input,img{
+  vertical-align: middle;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.hide{
+  display: none;
+}
+.show{
+  display:block;
+}
+.fr{
+  float: right;
+}
+.fl{
+  float: left;
+}
+.red_border{
+  border-bottom: 3px solid #f4483e;
+}
+textarea {
+  width: 95%;
+}
+//头部开始
+header.page-header{
+  height: 50px;
+  background-color: @color;
+  padding: 12px 42px 13px 16px;
+  div.left{
+    h1{
+      height: 25px;
+      -webkit-background-size: 40%, 40%;
+      background-size: 40%, 40%;
+      a{
+        height: 25px;
+        img{
+          height: 25px;
+        }
+      }
+    }
+  }
+  //下载按钮
+  a.downLoad{
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    height: 34px;
+    width: 34px;
+    background: url("../images/header_app.png") no-repeat;
+    //-webkit-background-size: 50%;
+    background-size: 100%;
+  }
+}
+//头部结束
+
+//搜索区域
+section.page-searchBlock{
+  height: 50px;
+  padding: 10px 70px 10px 10px;
+
+  form{
+    //height:;
+    border-radius: 30px;
+    position: relative;
+    input{
+      height: 30px;
+      border-radius: 30px ;
+      border: none;
+    }
+    input[type="search"]{
+      background-color: #f1f1f1;
+      color: #767474;
+      font-size: 12px;
+      width: 100%;
+      text-indent: 20px;
+    }
+    input[type="button"]{
+      background-color: @color;
+      color: #fff;
+      position: absolute;
+      top: 0px;
+      right: -67px;
+      width: 63px;
+    }
+  }
+}
+//搜索区域
+
+//底部区域
+footer{
+  padding-top: 25px;
+  background-color: #efefef;
+  //登录注册
+  ul{
+    margin-bottom: 17px;
+    width: 100%;
+    li {
+      float: left;
+      width: 33.3%;
+      &:nth-child(2) {
+        a{
+          border-left: 1px solid @border;
+          border-right: 1px solid @border;
+        }
+      }
+      &:nth-child(3) {
+        position: relative;
+        a:before{
+          content: '';
+          position: absolute;
+          top: 9px;
+          left: 16px;
+          height: 15px;
+          width: 15px;
+          background: url("../images/top.jpg") no-repeat ;
+          -webkit-background-size: 100%;
+          background-size: 100%;
+        }
+      }
+      a {
+        height: 32px;
+        width: 100%;
+        display: block;
+        border-top: 1px solid @border;
+        border-bottom: 1px solid @border;
+        text-align: center;
+        line-height: 32px;
+      }
+
+    }
+  }
+  //app 手机版
+
+  p:nth-child(2) {
+    text-align: center;
+    padding-bottom: 5px;
+    a {
+      color: #ff0837;
+      &:nth-child(2) {
+        color: #000;
+      }
+    }
+
+  }
+  p:nth-child(3){
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+
+}
+//底部区域

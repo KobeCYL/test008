@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--头部开始-->
+<header class="idx-header">
+    <div class="left">
+        <h1><a href=""><img src="images/header_logo.png" alt="liele"/></a></h1>
+    </div>
+    <a class="downLoad" href="#"></a>
+</header>
+
+<!--搜索区-->
+<!--导航区-->
+<section class="menu clearfix">
+    <!--<ul>-->
+    <!--<li>-->
+    <!--<a href=""><img src="" alt=""/>-->
+    <!--</a>-->
+    <!--<p></p>-->
+    <!--</li>-->
+    <!--</ul>-->
+</section>
+<!--导航区-->
+
+<!--产品标题页面-->
+<section class="idx-prod_title clearfix">
+    <h3>超值折扣推荐</h3>
+    <i class="btn-prod"></i>
+</section>
+<!--产品标题页面-->
+
+
+<!--产品页面-->
+<section class="idx-suggest">
+    <ul>
+        <li>
+            <a href="">
+                <img src="" alt=""/>
+
+                <div class="fr">
+                    <p><span></span></p>
+                    <div>
+                        <i></i>
+                        <b></b>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</section>
+<!--产品页面-->
+
+<!--品牌排行-->
+<section class="idx-prod_title clearfix">
+    <h3>品牌排行</h3>
+    <i class="btn-prod"></i>
+</section>
+<!--搜索区-->
+
+
+
+
+
+
+
+
+<!--尾部区域-->
+<footer class="clearfix">
+    <ul class="clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#">返回顶部</a></li>
+    </ul>
+    <p><a href="#">手机APP下载</a>
+        <a href="">慢慢买手机版</a>
+        -- 掌上比价平台
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--尾部区域-->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template.js"></script>
+<script src="js/index.js"></script>
+<script src="js/common.js"></script>
+<!--导航的模板引擎-->
+<script type="text/template" id="tmp_nav">
+    <ul class="clearfix">
+        {{each result as v i }}
+                {{if i>7 }}
+                    <li class="hide">
+                        <a href="{{v.titlehref}}?pageid=0">
+                            {{#v.img}}
+                            <p>{{v.name}}</p>
+                        </a>
+                    </li>
+                {{else}}
+                    <li>
+                        <a href="{{v.titlehref}}?pageid=0">
+                            {{#v.img}}
+                        </a>
+                        <p>{{v.name}}</p>
+                    </li>
+                 {{/if}}
+        {{/each}}
+    </ul>
+</script>
+<!--导航的模板引擎-->
+<!--产品的模板引擎-->
+<script type="text/template" id="tmp_money">
+    <ul>
+        {{each result as v i }}
+        <li>
+            <a href="">
+                {{#v.productImgSm}}
+                <div class="fr">
+                    <p>
+                        {{v.productName}}
+                        <span>{{v.productPinkage}}</span>
+                    </p>
+                    <div>
+                        <span>
+                            {{v.productFrom}}
+                            |
+                            {{v.productTime}}
+                        </span>
+                        <b class="commentS">{{v.productComCount}}</b>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<!--产品的模板引擎-->
+
+</body>
+</html>

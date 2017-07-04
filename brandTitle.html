@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/brandTitle.css"/>
+    <link rel="stylesheet" href="./lib/icon-font/search/iconfont.css"/>
+</head>
+<body>
+<!--头部开始-->
+<header class="page-header">
+    <div class="left">
+        <h1><a href=""><img src="./images/header_logo.png" alt="liele"/></a></h1>
+    </div>
+    <a class="downLoad" href="#"></a>
+</header>
+<!--头部结束-->
+<!--搜索区-->
+<section class="page-searchBlock">
+    <form action="" id="form">
+        <input type="search" placeholder="请输入你想比较的商品"/>
+        <input type="button" value="搜索"/>
+    </form>
+</section>
+<!--搜索区-->
+
+<!--导航区-->
+<section class="bra-nav">
+    <!--标题模板引擎-->
+        <span>
+            <a href="index.html">首页</a>
+            >
+            <a href="category.html">全部分类</a>
+            >
+        </span>
+</section>
+<!--导航区-->
+
+<!--分页 导航区-->
+<section class="getbrandtitle">
+        <!--模板引擎   ul里面的导航-->
+        <script type="text/template" id="getbrandtitle">
+            <h3>热门品牌排行</h3>
+            <ul class="bra-cont_nav_ul">
+            {{each result as v i }}
+            <li class="bra-cont_ul_li" brandTitleId="{{v.brandTitleId}}">
+                <a class="nav_title" categoryId="{{v.categoryId}}" href="brandTitle.html?brandTitleid={{v.brandTitleId}}">
+                    {{v.brandTitle}}
+                    <img src="./images/down.svg" alt="xiajiatou"/>
+                </a>
+                <div class="nav_li_div hide"></div>
+            </li>
+            {{/each}}
+            </ul>
+        </script>
+        <!--模板引擎   ul里面的导航-->
+</section>
+<!--分页 导航区-->
+
+<!--产品区-->
+<section class="bra_pro">
+    <!--产品牌子区域-->
+    <div class="bra_pro_brand">
+        <!--获取产品牌子的信息-->
+        <script type="text/template" id="getbrand">
+            <h3 class="brand_title com_title"></h3>
+            <ul>
+                {{each result as v i}}
+                    <li>
+                        <a href="productlist.html?categoryid={{v.categoryId}}&pageid=1">
+                            <i>{{i+1}}</i>
+                            <div class="brand_cont">
+                                <p>{{v.brandName}}</p>
+                                <span>{{v.brandInfo}}</span>
+                            </div>
+                        </a>
+                    </li>
+                {{/each}}
+            </ul>
+        </script>
+        <!--获取产品牌子的信息-->
+    </div>
+    <!--产品销量区域-->
+    <div class="bra_pro_saleNum">
+        <!--获取产品销售数量的信息-->
+        <script type="text/template" id="getbrandproductlist">
+            <h3 class="saleNum_title com_title"></h3>
+            <ul>
+                {{each result as v i }}
+                <li>
+                    <a href="bijia.html?productid={{v.productId}}">
+                        {{#v.productImg}}
+                        <div class="fr">
+                            <p>
+                                {{v.productName}}
+                            </p>
+                            <div class="bra_sale_price clearfix">
+                                <span class="price">{{v.productPrice}}</span>
+                                <b style="color: #ff841d;" class="fr">★ ★ ★ ★ ★</b>
+                            </div>
+                            <div>
+                                <span>
+                                    {{v.productQuote}} {{v.productCom}}
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </script>
+        <!--获取产品销售数量的信息-->
+    </div>
+    <!--产品评论区域-->
+    <div class="bra_pro_commont">
+        <!--获取产品销售数量的信息-->
+        <script type="text/template" id="getproductcom">
+            <h3 class="commont_title com_title"></h3>
+            <ul>
+                {{each result as v i}}
+                <li>
+                    <div class="cmt_title">
+                        <div class="cmt_img">
+                        </div>
+                        <h4 class="cmt_p"></h4>
+                    </div>
+                    <div class="cmt_contont">
+                        <p class="cmt_title_p">
+                            <span>{{v.comName}}: &nbsp;<strong style="color: #ff841d;">★★★★★</strong></span>
+                            <b class="fr">{{v.comTime}}</b>
+                        </p>
+                        <p class="cmt_cont_p">
+                            {{v.comContent}}
+                        </p>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </script>
+        <!--获取产品销售数量的信息-->
+    </div>
+</section>
+
+<!--产品区-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--尾部区域-->
+<footer class="clearfix">
+    <ul class="clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#">返回顶部</a></li>
+    </ul>
+    <p><a href="#">手机APP下载</a>
+        <a href="">慢慢买手机版</a>
+        -- 掌上比价平台
+    </p>
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--尾部区域-->
+
+<!--productlist.html?categoryid=0&category=电视&pageid=1;-->
+
+<!--模板引擎  li里面的div-->
+<script type="text/template" id="getcate_nav_li_div_temp">
+    <ul class="getcate_nav_li_div_ul clearfix">
+        {{each result as v i }}
+        <li titleId="{{v.titleId}}">
+            <a href="productlist.html?categoryid={{v.categoryId}}&pageid=1" categoryId="{{v.categoryId}}">
+                {{v.category}}
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<!--模板引擎  li里面的div-->
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/common/route.js"></script>
+<script src="./js/brandTitle.js"></script>
+
+</body>
+</html>

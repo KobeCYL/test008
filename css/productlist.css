@@ -1,0 +1,101 @@
+section.byid-nav {
+  height: 35px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #c9c9c9;
+  padding-left: 8px;
+  padding-right: 6px;
+  line-height: 35px;
+}
+section.byid-nav span a {
+  color: #020105;
+}
+section.byid-nav a.choose {
+  float: right;
+  height: 29px;
+  width: 62px;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  line-height: 29px;
+  text-align: center;
+  margin-top: 3px;
+  color: #0f0a05;
+}
+section.byid_pro {
+  background-color: #f0f0f0;
+}
+section.byid_pro ul {
+  background-color: #fff;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+section.byid_pro ul li {
+  width: 100%;
+  height: 117px;
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-right: 13px;
+  border: 1px solid #bbbbbb;
+}
+section.byid_pro ul li a {
+  display: block;
+  width: 100%;
+  height: 102px;
+  position: relative;
+  padding-left: 110px;
+}
+section.byid_pro ul li a img {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 100px;
+}
+section.byid_pro ul li a div.fr {
+  width: 100%;
+}
+section.byid_pro ul li a div.fr p {
+  font-size: 15px;
+  height: 40px;
+  color: #221533;
+}
+section.byid_pro ul li a div.fr p span {
+  color: #ee6410;
+}
+section.byid_pro ul li a div.fr div {
+  margin-top: 12px;
+  font-size: 11px;
+  color: #9b9a9f;
+}
+section.byid_pro ul li a div.fr div span {
+  float: left;
+}
+section.btn_area {
+  position: relative;
+  padding: 5px 90px;
+  height: 45px;
+  text-align: center  ;
+}
+section.btn_area button {
+  position: absolute;
+  width: 82px;
+  height: 35px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 5px;
+  top: 5px;
+}
+section.btn_area button.prve {
+  left: 10%;
+}
+section.btn_area select {
+  width: 83px;
+  height: 35px;
+  padding: 0 4%;
+  margin: 0;
+}
+section.btn_area select option {
+  text-align: center;
+}
+section.btn_area button.next {
+  right: 10%;
+}

@@ -1,0 +1,181 @@
+header.mon-duct-header {
+  height: 45px;
+  background-color: #ff841d;
+  padding: 0px 42px 0px 16px;
+}
+header.mon-duct-header div.left a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+header.mon-duct-header div.left h2 {
+  height: 45px;
+  font-size: 20px;
+  line-height: 45px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center  ;
+}
+header.mon-duct-header a.downLoad {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  height: 34px;
+  width: 34px;
+  background: url("../images/header_app.png") no-repeat;
+  background-size: 100%;
+}
+section.mon-duct-container {
+  padding: 20px 10px 10px 20px;
+  width: 100%;
+}
+section.mon-duct-container div.info {
+  width: 100%;
+}
+section.mon-duct-container div.info h1 {
+  line-height: 20px;
+  color: #585550;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+section.mon-duct-container div.info span {
+  color: #97a1a3;
+}
+section.mon-duct-container div.info p.info1 {
+  font-size: 15px;
+  color: #2c292d;
+  margin-top: 15px;
+}
+section.mon-duct-container div.info p.info1 img {
+  float: right;
+  width: 120px;
+  overflow: hidden;
+}
+section.mon-duct-container div.info p.info2 {
+  overflow: hidden;
+  color: #2c292d;
+}
+section.mon-duct-container div.info div.img {
+  text-align: center;
+}
+section.mon-duct-container div.info div.productCity {
+  width: 100%;
+  text-align: center;
+}
+section.mon-duct-container div.info div.productCity ul {
+  max-width: 350px;
+  width: 50%;
+  display: inline-block;
+  padding: 15px;
+  box-shadow: 1px 1px 3px 3px gray;
+}
+section.mon-duct-container div.info div.productCity ul li {
+  border-bottom: 1px dashed #dedede;
+}
+section.mon-duct-container div.info div.productCity ul li a {
+  display: block;
+  font-size: 12px;
+  padding: 3px;
+}
+section.mon-duct-container div.info div.productCity ul li a span {
+  display: block;
+  text-indent: 10px;
+  text-align: left;
+}
+section.mon-duct-container div.info div.productCity ul li a span strong {
+  float: right;
+  color: #f38921;
+  margin-right: 10px;
+}
+section.mon-duct-container div.info div.fixed {
+  padding: 20px;
+  width: 100%;
+}
+section.mon-duct-container div.info div.fixed a {
+  background-color: #ff9000;
+  color: #fff;
+  display: block;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+section.mon-duct-container div.info div.imgSaoMa {
+  text-align: center;
+}
+section.mon-duct-container div.info div.cu-content-pl {
+  margin-top: 30px;
+}
+section.mon-duct-container div.info div.cu-content-pl div.tit {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 10px;
+}
+section.mon-duct-container div.info div.cu-content-pl div.reply div.form {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+section.mon-duct-container div.info div.cu-content-pl div.reply div.form textarea {
+  display: block;
+  height: 110px;
+  width: 100%;
+}
+section.mon-duct-container div.info div.cu-content-pl div.reply div.form div.ctrl {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+section.mon-duct-container div.info div.cu-content-pl div.reply div.form div.ctrl input {
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #ff841d;
+  color: #fff;
+  font-size: 15px;
+}
+section.mon-duct-container div.info div.cu-content-pl div.reply div.tit {
+  font-size: 16px;
+  padding: 6px 8px;
+}
+section.mon-duct-container div.info div.cu-content-pl div.list ul li {
+  padding: 18px 10px;
+  background-color: #FFFFFF;
+}
+section.mon-duct-container div.info div.cu-content-pl div.list ul li div.userimg {
+  width: 40px;
+  float: left;
+  overflow: hidden;
+}
+section.mon-duct-container div.info div.cu-content-pl div.list ul li div.userimg img {
+  width: 40px;
+  background-position: top;
+  border-radius: 20px;
+  height: 40px;
+}
+section.mon-duct-container div.info div.cu-content-pl div.list ul li div.con {
+  overflow: hidden;
+  padding-left: 10px;
+}
+section.mon-duct-container div.info div.cu-content-pl div.list ul li div.con div.name {
+  margin-bottom: 6px;
+  color: #2e8b01;
+  font-size: 14px;
+}
+section.mon-duct-container div.info div.cu-content-pl div.list ul li div.con div.name div.username {
+  color: #5997c0;
+  font-size: 13px !important;
+  float: left;
+}
+section.mon-duct-container div.info div.cu-content-pl div.list ul li div.con div.name div.time {
+  color: #999999;
+  font-size: 13px !important;
+  float: right;
+}
+section.mon-duct-container div.info div.cu-content-pl div.list ul li div.con div.content {
+  word-break: break-all;
+  font-size: 15px !important;
+  color: #606060;
+  line-height: 20px;
+}

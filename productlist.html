@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/productlist.css"/>
+</head>
+<body>
+<!--头部开始-->
+<header class="page-header">
+    <div class="left">
+        <h1><a href=""><img src="images/header_logo.png" alt="liele"/></a></h1>
+    </div>
+    <a class="downLoad" href="#"></a>
+</header>
+<!--头部结束-->
+<!--搜索区-->
+<section class="page-searchBlock">
+    <form action="" id="form">
+        <input type="search" placeholder="请输入你想比较的商品"/>
+        <input type="button" value="搜索"/>
+    </form>
+</section>
+<!--导航区-->
+
+<section class="byid-nav">
+    <!--标题模板引擎-->
+    <script type="text/template" id="getcategorybyid">
+        {{each result as v i }}
+        <span>
+            <a href="index.html">首页</a>
+            >
+            <a href="category.html">全部分类</a>
+            >
+            <a href="productlist.html?categoryid={{v.categoryId}}&category={{v.category}}&pageid=1">{{v.category}}</a>
+            >
+        </span>
+        <a href="javascript:;" class="choose">筛选</a>
+        {{/each}}
+
+    </script>
+</section>
+<!--导航区-->
+
+<!--产品区-->
+<section class="byid_pro">
+    <ul></ul>
+    <!--产品的模板引擎-->
+    <script type="text/template" id="getProductList">
+        {{each result as v i }}
+        <li>
+            <a productId="{{v.productId}}" href="bijia.html?productid={{v.productId}}&categoryid={{v.categoryId}}">
+                {{#v.productImg}}
+                <div class="fr">
+                    <p>
+                        {{v.productName}}
+                    </p>
+                    <span>{{v.productPrice}}</span>
+                    <div>
+                    <span>
+                        {{v.productQuote}}
+                        &nbsp;&nbsp;
+                        {{v.productCom}}
+                    </span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+</section>
+<!--产品区-->
+
+<!--按钮区开始-->
+<section class="btn_area clearfix">
+
+</section>
+<!--按钮区结束-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--尾部区域-->
+<footer class="clearfix">
+    <ul class="clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#">返回顶部</a></li>
+    </ul>
+    <p><a href="#">手机APP下载</a>
+        <a href="">慢慢买手机版</a>
+        -- 掌上比价平台
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--尾部区域-->
+<!--产品的模板引擎-->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template.js"></script>
+<script src="js/common.js"></script>
+<script src="js/common/route.js"></script>
+<script src="js/productlist.js"></script>
+
+</body>
+</html>

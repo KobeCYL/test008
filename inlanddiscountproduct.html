@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/inlanddiscountproduct.css"/>
+</head>
+<body>
+<!--头部开始-->
+<header class="ild-duct-header">
+    <div class="left">
+        <a href="inlanddiscount.html"><img src="images/icback.svg" alt=""/></a>
+        <h2>国内折扣</h2>
+    </div>
+    <a class="downLoad" href="#"></a>
+</header>
+<!--头部结束-->
+<!--产品布局-->
+<section class="ild-duct-container">
+    <!--//产品开头info页面样式-->
+    <div class="ild-duct-info"></div>
+    <!--//产品开头模板引擎-->
+    <script type="text/template" id="getdiscountproduct">
+        <h2>{{result[0].productName}}</h2>
+        <h4>{{result[0].productPrice}}</h4>
+        <span>{{result[0].productFrom}}{{result[0].productTime}}{{result[0].productTips}}</span>
+        <p class="info1">
+            <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=j_sources/img/2016/10/24/190_190_0_36618798b6e1a98d9f4ae8f7a195f41b.jpg" alt="新低价：MTG Style 系列 中性 Body Make Seat Style 脊椎护腰坐垫"/>
+            {{result[0].productInfo}}
+        </p>
+        <div class="img">
+            {{#result[0].productImg}}
+        </div>
+
+        <div class="fixed">
+            <a href="">前往购买</a>
+        </div>
+        <div class="productCity">
+            {{#result[0].productCity}}
+        </div>
+        <div class="imgSaoMa">
+            <img src="images/mmbweixin2.png" alt="liele"/>
+        </div>
+        <div class="cu-content-pl">
+            {{#result[0].productComment}}
+        </div>
+
+    </script>
+</section>
+<!--产品布局-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--尾部区域-->
+<footer class="clearfix">
+    <ul class="clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#">返回顶部</a></li>
+    </ul>
+    <p><a href="#">手机APP下载</a>
+        <a href="">慢慢买手机版</a>
+        -- 掌上比价平台
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--尾部区域-->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template.js"></script>
+<script src="js/common.js"></script>
+<script src="js/common/route.js"></script>
+<script src="js/inlanddiscountproduct.js"></script>
+</body>
+</html>

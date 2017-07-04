@@ -1,0 +1,141 @@
+@import "var";
+//菜单导航的栏
+section.bijia-nav{
+  height: 35px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #c9c9c9;
+  padding-left: 8px;
+  padding-right: 6px;
+  line-height: 35px;
+  span{
+    a{
+      color: #020105;
+    }
+  }
+  a.choose{
+    float: right;
+    height: 29px;
+    width: 62px;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    line-height: 29px;
+    text-align: center;
+    margin-top: 3px;
+    color: #0f0a05;
+  }
+
+}
+//菜单导航的栏
+//产品页面标题 图片部分
+section.bijia_pro{
+  div.product{
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 2px solid #676767;
+    h3{
+      text-align: center;
+      height: 30px;
+    }
+
+    img.collect{
+      position: absolute;
+      bottom: 20px;
+      right:  25px;
+    }
+    img{
+
+    }
+  }
+  ul.shop_title{
+    width: 100%;
+    li{
+      float: left;
+      width: 33.33%;
+      text-align: center;
+      line-height: 35px;
+      height: 35px;
+      box-sizing: border-box;
+      border: 1px solid red;
+      border-left: none;
+      background-color: #ffbb00;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffa632), to(#ff9000));      &:nth-child(1){
+      border-left: 1px solid red;
+      }
+    }
+  }
+  table{
+    tr{
+      padding: 0 10px;
+      line-height: 30px;
+
+      td.p_pic{
+        text-align: center;
+      }
+      td.red{
+        text-align: right;
+        color: red;
+        padding-right: 20px;
+      }
+    }
+
+  }
+  p{
+    text-align: center;
+    line-height: 24px;
+    border-top: 1px solid @border;
+    padding-top: 10px ;
+    padding-bottom: 15px;
+  }
+
+}
+//产品页面标题 图片部分
+
+//产品页面评论区
+section.bijiao_comment{
+  h3{
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background-color: #dbdbdb;
+  }
+  div.container{
+    div.comment{
+      padding: 15px 10px 5px 10px;
+      border-bottom: 1px solid @border;
+      div.title{
+        p{
+          span{
+
+          }
+          i{
+            float: right;
+          }
+        }
+        b{
+          float: right;
+        }
+
+      }
+      div.context{
+        color: #161516;
+      }
+    }
+    p{
+      height: 60px;
+      padding: 15px 7px;
+      a.more{
+        text-align: center;
+        line-height: 30px;
+        display: block;
+        height: 30px;
+        border-radius: 3px;
+        background-color: #e5e5e5;
+        border: 1px solid #b4b4b4;
+      }
+    }
+
+  }
+}
+//产品页面评论区
+

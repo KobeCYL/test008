@@ -1,0 +1,106 @@
+section.bijia-nav {
+  height: 35px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #c9c9c9;
+  padding-left: 8px;
+  padding-right: 6px;
+  line-height: 35px;
+}
+section.bijia-nav span a {
+  color: #020105;
+}
+section.bijia-nav a.choose {
+  float: right;
+  height: 29px;
+  width: 62px;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  line-height: 29px;
+  text-align: center;
+  margin-top: 3px;
+  color: #0f0a05;
+}
+section.bijia_pro div.product {
+  position: relative;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: 2px solid #676767;
+}
+section.bijia_pro div.product h3 {
+  text-align: center;
+  height: 30px;
+}
+section.bijia_pro div.product img.collect {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+}
+section.bijia_pro ul.shop_title {
+  width: 100%;
+}
+section.bijia_pro ul.shop_title li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  box-sizing: border-box;
+  border: 1px solid red;
+  border-left: none;
+  background-color: #ffbb00;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffa632), to(#ff9000));
+}
+section.bijia_pro ul.shop_title li:nth-child(1) {
+  border-left: 1px solid red;
+}
+section.bijia_pro table tr {
+  padding: 0 10px;
+  line-height: 30px;
+}
+section.bijia_pro table tr td.p_pic {
+  text-align: center;
+}
+section.bijia_pro table tr td.red {
+  text-align: right;
+  color: red;
+  padding-right: 20px;
+}
+section.bijia_pro p {
+  text-align: center;
+  line-height: 24px;
+  border-top: 1px solid #bbbbbb;
+  padding-top: 10px ;
+  padding-bottom: 15px;
+}
+section.bijiao_comment h3 {
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  background-color: #dbdbdb;
+}
+section.bijiao_comment div.container div.comment {
+  padding: 15px 10px 5px 10px;
+  border-bottom: 1px solid #bbbbbb;
+}
+section.bijiao_comment div.container div.comment div.title p i {
+  float: right;
+}
+section.bijiao_comment div.container div.comment div.title b {
+  float: right;
+}
+section.bijiao_comment div.container div.comment div.context {
+  color: #161516;
+}
+section.bijiao_comment div.container p {
+  height: 60px;
+  padding: 15px 7px;
+}
+section.bijiao_comment div.container p a.more {
+  text-align: center;
+  line-height: 30px;
+  display: block;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #e5e5e5;
+  border: 1px solid #b4b4b4;
+}

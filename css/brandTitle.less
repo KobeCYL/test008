@@ -1,0 +1,275 @@
+@import "var";
+
+//设置完毕
+
+//设置分页菜单模块
+
+//菜单导航的栏
+section.bra-nav {
+  height: 35px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #c9c9c9;
+  padding-left: 8px;
+  padding-right: 6px;
+  line-height: 35px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  span {
+    a {
+      color: #020105;
+    }
+  }
+
+}
+
+//菜单导航的栏
+
+//设置分页菜单模块
+section.getbrandtitle {
+  width: 100%;
+  h3 {
+    height: 40px;
+    margin: 10px;
+    border: 1px solid @border;
+    font-size: 20px;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    color: #874604;
+  }
+  ul.bra-cont_nav_ul {
+    width: 100%;
+    border-top: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+    border-radius: 3px;
+    li.bra-cont_ul_li {
+      width: 100%;
+      a {
+        display: block;
+        height: 39px;
+        background-color: #ededed;
+        border-bottom: 1px solid #cacaca;
+        line-height: 39px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #020524;
+        padding-left: 30px;
+        //background: url(http://www.zuyushop.com/wap/images/arrow1.gif) right center no-repeat;
+        img {
+          float: right;
+          margin: 10px 10px 0 0;
+          height: 20px;
+        }
+      }
+      div.nav_li_div {
+        width: 100%;
+        ul {
+          width: 100%;
+          border-left: 1px solid @border;
+          background-color: #f9f9f9;
+          li {
+            width: 33.3%;
+            float: left;
+            border-right: 1px solid @border;
+            a {
+              width: 100%;
+              background-color: #f9f9f9;
+              text-align: center;
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//设置分页菜单模块
+
+//<!--产品区-->
+section.bra_pro {
+  .com_title {
+    line-height: 36px;
+    font-size: 14px;
+    padding-left: 10px;
+    background: #f3f3f3;
+    border: 1px solid #c8c8c8;
+    border-left: none;
+    border-right: none;
+    color: #874604;
+  }
+  //<!--产品牌子区域-->
+  div.bra_pro_brand {
+    h3 {
+
+    }
+    ul {
+      li {
+        border-bottom: 1px solid #e7e7e7;
+        padding: 10px;
+        background-image: url(../images/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: right center;
+        &:nth-child(1) {
+          i {
+            background-color: #f10e0e;
+          }
+        }
+        &:nth-child(2) {
+          i {
+            background-color: #ff9314;
+          }
+        }
+        &:nth-child(3) {
+          i {
+            background-color: #8adf5b;
+          }
+        }
+        a {
+          display: block;
+          i {
+            float: left;
+            width: 20px;
+            height: 20px;
+            background-color: #c9c9c9;
+            line-height: 20px;
+            text-align: center;
+          }
+          div.brand_cont {
+            padding-left: 10px;
+            overflow: hidden;
+            p {
+              color: #000;
+              margin-bottom: 5px;
+            }
+            span {
+              color: #999;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //<!--产品销量区域-->
+  div.bra_pro_saleNum {
+    background-color: #f0f0f0;
+    ul{
+      background-color: #fff;
+      //max-width: 960px;
+      width: 100%;
+      margin:0 auto;
+      li{
+        width: 100%;
+        height: 117px;
+        padding-left: 10px;
+        padding-top: 8px;
+        padding-right: 13px;
+        border: 1px solid @border;
+        a{
+          display: block;
+          width: 100%;
+          height: 102px;
+          position: relative;
+          padding-left: 110px;
+          img{
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 100px;
+          }
+          div.fr{
+            width: 100%;
+            p{
+              font-size: 15px;
+              height: 40px;
+              color: #221533;
+              margin-bottom: 5px;
+              overflow: hidden;
+            }
+            p.bra_sale_price{
+              span.price{
+                color: #000;
+                font-weight: bold;
+                font-size: 15px;
+              }
+              b.fr{
+                color: @color;
+              }
+            }
+
+            div{
+              margin-top: 12px;
+              font-size: 11px;
+              color:#9b9a9f;
+              span{
+                float: left;
+
+              }
+              b{
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //<!--产品评论区域-->
+  div.bra_pro_commont {
+    h3{}
+    ul{
+      li{
+        padding: 10px;
+        div.cmt_title{
+          background-color: #fff;
+          width: 100%;
+          height: 102px;
+          position: relative;
+          padding-left: 110px;
+          .cmt_img {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            img{
+            }
+          }
+          h4.cmt_p{
+            margin-top: 10px;
+            font-size: 15px;
+            height: 40px;
+            color: #221533;
+            margin-bottom: 5px;
+            overflow: hidden;
+          }
+        }
+        div.cmt_contont{
+          background-color: #f8f8f8;
+          padding: 10px;
+          border: 1px solid #e7e7e7;
+          position: relative;
+          p.cmt_title_p{
+            color: #4f6900;
+            font-size: 14px;
+            b{
+              color: #999999;
+            }
+          }
+          p.cmt_cont_p{
+            color: #000000;
+            margin-top: 10px;
+            line-height: 22px;
+            font-size: 15px;
+            word-break: break-all;
+            /* text-align: justify; */
+            /* text-align-last: justify; */
+          }
+        }
+      }
+    }
+  }
+}
+
+//<!--产品区-->
+
+

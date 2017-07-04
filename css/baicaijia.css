@@ -1,0 +1,192 @@
+header.bcj-header {
+  height: 45px;
+  background-color: #f4483e;
+  padding: 0px 42px 0px 16px;
+  position: relative;
+}
+header.bcj-header div.left a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+header.bcj-header div.left h2 {
+  height: 45px;
+  font-size: 20px;
+  line-height: 45px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center  ;
+}
+header.bcj-header a.downLoad {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  height: 34px;
+  width: 34px;
+  background: url("../images/header_app.png") no-repeat;
+  background-size: 100%;
+}
+section.bcj_nav {
+  overflow: hidden;
+  position: relative;
+  height: 38px;
+  padding-right: 38px;
+}
+section.bcj_nav ul li {
+  float: left;
+}
+section.bcj_nav ul li a {
+  display: block;
+  height: 38px;
+  line-height: 38px;
+  margin: 0 12px;
+}
+section.bcj_nav i {
+  position: absolute;
+  top: 0;
+  right: 0  ;
+  height: 38px;
+  width: 38px;
+  text-align: center;
+  line-height: 38px;
+  font-size: 25px;
+  background-color: #fff;
+}
+section.bcj_pro {
+  background-color: #f0f0f0;
+}
+section.bcj_pro ul {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+section.bcj_pro ul li {
+  width: 100%;
+  height: 150px;
+  padding-top: 8px;
+  padding-right: 13px;
+  border: 1px solid #bbbbbb;
+  position: relative;
+  padding-left: 150px;
+}
+section.bcj_pro ul li a.li_a {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 140px;
+  height: 140px;
+  border: 1px solid #fff0f0;
+  box-sizing: border-box;
+}
+section.bcj_pro ul li a.li_a img {
+  width: 140px;
+}
+section.bcj_pro ul li div {
+  width: 100%;
+  padding-left: 5px;
+}
+section.bcj_pro ul li div h5 {
+  font-size: 15px;
+  height: 40px;
+  overflow: hidden;
+  color: #221533;
+}
+section.bcj_pro ul li div p.bai_pro_price {
+  font-size: 24px;
+  color: #fc353a;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+section.bcj_pro ul li div p.bai_pro_price em {
+  font-size: 12px;
+  vertical-align: middle;
+  font-style: normal;
+}
+section.bcj_pro ul li div p.bai_pro_price del {
+  text-decoration: line-through;
+  font-size: 13px;
+  color: #a8a8a8;
+  margin-left: 12px;
+  vertical-align: middle;
+}
+section.bcj_pro ul li div div.bar {
+  margin-bottom: 10px;
+}
+section.bcj_pro ul li div div.bar i {
+  position: relative;
+  box-sizing: border-box;
+  width: 82px;
+  height: 14px;
+  border: 1px solid #fc353a;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 900;
+  background: #ffb7b7;
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+}
+section.bcj_pro ul li div div.bar i em {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 5px;
+  background: #fc353a;
+  display: block;
+  transition: all 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
+  width: 0;
+  vertical-align: middle;
+}
+section.bcj_pro ul li div div.bar i span {
+  font-size: 12px;
+  line-height: 11px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+section.bcj_pro ul li div div.bar b {
+  font-weight: normal;
+  font-size: 12px;
+  color: #999999;
+  vertical-align: 3px;
+  margin-left: 10px;
+  color: #fc353a;
+}
+section.bcj_pro ul li div p.bai_pro_cheap {
+  position: relative;
+}
+section.bcj_pro ul li div p.bai_pro_cheap a {
+  border: 1px dotted #e4393c;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  display: inline-block;
+  width: 120px;
+  padding: 0px 5px;
+  font-size: 12px;
+  color: #e4393c;
+  position: relative;
+  z-index: 1;
+}
+section.bcj_pro ul li div p.bai_pro_cheap button {
+  height: 26px;
+  background-color: #ff5e5d;
+  width: 60px;
+  line-height: 26px;
+  text-align: center ;
+  border-radius: 5px;
+  outline: none;
+  border: none  ;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

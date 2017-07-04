@@ -1,0 +1,150 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+header.cpn-header {
+  height: 45px;
+  background-color: #f4483e;
+  padding: 0px 42px 0px 16px;
+  position: relative;
+}
+header.cpn-header div.left a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+header.cpn-header div.left h2 {
+  height: 45px;
+  font-size: 20px;
+  line-height: 45px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center  ;
+}
+header.cpn-header a.downLoad {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  height: 34px;
+  width: 34px;
+  background: url("../images/header_app.png") no-repeat;
+  background-size: 100%;
+}
+section.cpn-duct-pro {
+  background-color: #f0f0f0;
+}
+section.cpn-duct-pro ul {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+section.cpn-duct-pro ul li {
+  width: 100%;
+  height: 117px;
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-right: 13px;
+  border: 1px solid #bbbbbb;
+}
+section.cpn-duct-pro ul li a {
+  display: block;
+  width: 100%;
+  height: 102px;
+  position: relative;
+  padding-left: 110px;
+}
+section.cpn-duct-pro ul li a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+}
+section.cpn-duct-pro ul li a div.fr {
+  width: 100%;
+}
+section.cpn-duct-pro ul li a div.fr p {
+  font-size: 15px;
+  height: 40px;
+  color: #221533;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+section.cpn-duct-pro ul li a div.fr span.price {
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+}
+section.cpn-duct-pro ul li a div.fr div {
+  margin-top: 12px;
+  font-size: 11px;
+  color: #9b9a9f;
+}
+section.cpn-duct-pro ul li a div.fr div span {
+  float: left;
+}
+section.cpn-duct-pro ul li a div.fr div b {
+  float: right;
+}
+section.mon_motai {
+  width: 100%;
+  height: 100%;
+}
+section.mon_motai .bg {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  border: 1px solid #332233;
+  width: 100%;
+  height: 100%;
+  background-color: #224777;
+}
+section.mon_motai .center {
+  border: 1px solid #000;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section.mon_motai .center b.close_btn {
+  position: absolute;
+  right: -26%;
+  top: -20%;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+  z-index: 4;
+}
+section.mon_motai .center div.left_btn {
+  position: absolute;
+  top: 50%;
+  left: -28%;
+  color: #fff0f0;
+  font-size: 50px;
+  transform: translate(0, -50%);
+}
+section.mon_motai .center div.right_btn {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -28%;
+  color: #fff0f0;
+  font-size: 50px;
+}
+section.mon_motai .center div.ul_fath {
+  width: 100%;
+  overflow: hidden;
+}
+section.mon_motai .center div.ul_fath ul {
+  width: 9999999999px;
+}
+section.mon_motai .center div.ul_fath ul li {
+  float: left;
+}
+section.mon_motai .center div.ul_fath ul li img {
+  width: 200px;
+}

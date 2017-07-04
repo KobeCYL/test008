@@ -1,0 +1,179 @@
+header.gsp-header {
+  height: 45px;
+  background-color: #ff841d;
+  padding: 0px 42px 0px 16px;
+}
+header.gsp-header div.left a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+header.gsp-header div.left h2 {
+  height: 45px;
+  font-size: 20px;
+  line-height: 45px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+header.gsp-header a.downLoad {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  height: 34px;
+  width: 34px;
+  background: url("../images/header_app.png") no-repeat;
+  background-size: 100%;
+}
+section.gsp_nav {
+  width: 100%;
+  position: relative;
+  padding-right: 46px;
+  border-bottom: 1px solid #bbbbbb;
+}
+section.gsp_nav ul {
+  width: 100%;
+}
+section.gsp_nav ul li {
+  width: 33%;
+  float: left;
+}
+section.gsp_nav ul li a {
+  display: block;
+  height: 37px;
+  font-size: 20px;
+  line-height: 37px;
+  text-align: center;
+}
+section.gsp_nav ul li a b {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+section.gsp_nav a.nav_search {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  height: 37px;
+  width: 37px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 46px;
+  border-left: 1px solid #bbbbbb;
+}
+section.open_list {
+  width: 100%;
+  position: relative;
+}
+section.open_list .getgsshop,
+section.open_list .getgsshoparea,
+section.open_list .getgs_sprice {
+  z-index: 3;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section.open_list .getgsshop ul,
+section.open_list .getgsshoparea ul,
+section.open_list .getgs_sprice ul {
+  width: 100%;
+}
+section.open_list .getgsshop ul li,
+section.open_list .getgsshoparea ul li,
+section.open_list .getgs_sprice ul li {
+  width: 100%;
+}
+section.open_list .getgsshop ul li:nth-child(1),
+section.open_list .getgsshoparea ul li:nth-child(1),
+section.open_list .getgs_sprice ul li:nth-child(1) {
+  border-top: 1px solid #bbbbbb;
+}
+section.open_list .getgsshop ul li a,
+section.open_list .getgsshoparea ul li a,
+section.open_list .getgs_sprice ul li a {
+  width: 100%;
+  padding-left: 20px;
+  display: block;
+  height: 37px;
+  line-height: 37px;
+  text-align: left;
+  background-color: #fff;
+  border-bottom: 1px solid #bbbbbb;
+  padding-right: 20px;
+}
+section.open_list .getgsshop ul li a b,
+section.open_list .getgsshoparea ul li a b,
+section.open_list .getgs_sprice ul li a b {
+  float: right;
+  color: #ff841d;
+  line-height: 37px;
+}
+section.getgsproduct {
+  max-width: 960px;
+  text-align: left;
+  font-size: 14px;
+  margin: 0px auto;
+}
+section.getgsproduct ul {
+  width: 100%;
+  padding: 4px;
+  overflow: hidden;
+}
+section.getgsproduct ul li {
+  float: left;
+  display: table-cell;
+  padding: 10px 0 0 10px;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+  background: #FFFFFF;
+  border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+  -webkit-border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top-width: 0;
+  overflow: hidden;
+}
+section.getgsproduct ul li:nth-child(2n) {
+  padding-right: 10px;
+}
+section.getgsproduct ul li a {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #eeeeee;
+}
+section.getgsproduct ul li a img {
+  height: 140px;
+}
+section.getgsproduct ul li a p {
+  text-align: left;
+  text-indent: 5px;
+  line-height: 20px;
+  color: #000;
+  word-break: break-all;
+  height: 40px;
+  overflow: hidden;
+}
+section.getgsproduct ul li a div {
+  position: relative;
+  text-align: left;
+  text-indent: 5px;
+}
+section.getgsproduct ul li a div i {
+  color: #ff841d;
+  font-size: 15px;
+}
+section.getgsproduct ul li a div button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 62px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  background-color: #ff841d;
+  color: #fff;
+  outline: none;
+}

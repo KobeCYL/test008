@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/couponproduct.css"/>
+</head>
+<body>
+<!--头部开始-->
+<header class="cpn-header">
+    <div class="left">
+        <a href="coupon.html"><img src="images/icback.svg" alt=""/></a>
+        <h2 class="cpn-pro-h2"></h2>
+    </div>
+    <a class="downLoad" href="#"></a>
+</header>
+<!--头部结束-->
+
+<!--产品区元素-->
+<section class="cpn-duct-pro">
+    <ul></ul>
+    <!--产品的模板引擎-->
+    <script type="text/template" id="getcouponproduct">
+
+        {{each result as v i }}
+        <li>
+            <a href="moneyproduct.html?productid={{v.productId}}">
+                {{#v.couponProductImg}}
+                <div class="fr">
+                    <p>
+                        {{v.couponProductName}}
+                    </p>
+                    <span class="price">{{v.couponProductPrice}}</span>
+                    <div>
+                        <span>
+                            {{v.couponProductTime}}
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+
+    </script>
+    <!--产品的模板引擎-->
+</section>
+<!--产品区元素-->
+<!--按钮区开始-->
+<section class="mon_area clearfix">
+
+</section>
+
+<!--按钮区结束-->
+
+<section class="mon_motai hide">
+    <div class="bg"></div>
+    <div class="center">
+        <b class="close_btn">
+            x
+        </b>
+        <div class="left_btn">
+            <
+        </div>
+        <div class="right_btn">
+            >
+        </div>
+        <div class="ul_fath">
+            <ul></ul>
+            <script type="text/template" id="moTaiBox">
+                    {{each result as v i }}
+                         <li class="li_img">{{#v.couponProductImg}}</li>
+                    {{/each}}
+            </script>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--尾部区域-->
+<footer class="clearfix">
+    <ul class="clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#">返回顶部</a></li>
+    </ul>
+    <p><a href="#">手机APP下载</a>
+        <a href="">慢慢买手机版</a>
+        -- 掌上比价平台
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--尾部区域-->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template.js"></script>
+<script src="js/common.js"></script>
+<script src="js/common/route.js"></script>
+<script src="js/couponproduct.js"></script>
+</body>
+</html>

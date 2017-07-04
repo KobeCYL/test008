@@ -1,0 +1,81 @@
+header.ild-header {
+  height: 45px;
+  background-color: #ff841d;
+  padding: 0px 42px 0px 16px;
+}
+header.ild-header div.left a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+header.ild-header div.left h2 {
+  height: 45px;
+  font-size: 20px;
+  line-height: 45px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+header.ild-header a.downLoad {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  height: 34px;
+  width: 34px;
+  background: url("../images/header_app.png") no-repeat;
+  background-size: 100%;
+}
+section.getinlanddiscount {
+  max-width: 960px;
+  text-align: left;
+  font-size: 14px;
+  margin: 0px auto;
+}
+section.getinlanddiscount ul {
+  width: 100%;
+  padding: 0 0px 10px 0;
+}
+section.getinlanddiscount ul li {
+  float: left;
+  display: table-cell;
+  padding: 10px 0 0 10px;
+  text-align: center;
+  vertical-align: middle;
+  background: none;
+  width: 50%;
+  background: #FFFFFF;
+  border: 1px solid #eeeeee;
+  border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+  -webkit-border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top-width: 0;
+  overflow: hidden;
+}
+section.getinlanddiscount ul li a {
+  display: inline-block;
+  width: 90%;
+}
+section.getinlanddiscount ul li a img {
+  height: 140px;
+}
+section.getinlanddiscount ul li a p {
+  text-align: left;
+  line-height: 20px;
+  color: #000;
+  word-break: break-all;
+  height: 40px;
+  overflow: hidden;
+}
+section.getinlanddiscount ul li a i {
+  text-align: left;
+  display: block;
+  color: #ff841d;
+}
+section.getinlanddiscount ul li a span {
+  text-align: left;
+  margin-top: 8px;
+  display: block;
+  color: darkgray;
+}

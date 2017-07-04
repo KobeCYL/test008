@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/moneyproduct.css"/>
+</head>
+<body>
+<!--头部开始-->
+<header class="mon-duct-header">
+    <div class="left">
+        <a href="moneyctrl.html?productid=0"><img src="images/icback.svg" alt=""/></a>
+        <h2>国内折扣</h2>
+    </div>
+    <a class="downLoad" href="#"></a>
+</header>
+<!--头部结束-->
+<!--产品布局-->
+<section class="mon-duct-container">
+    <!--//产品开头info页面样式-->
+    <div class="info"></div>
+    <!--//产品开头模板引擎-->
+    <script type="text/template" id="getmoneyctrlproduct">
+            <h1>{{result[0].productName}}</h1>
+            <span>{{result[0].productFrom}}{{result[0].productTime}}{{result[0].productTips}}</span>
+            <p class="info1">
+                {{#result[0].productImgSm}}
+                {{result[0].productInfo}}
+            </p>
+            <p class="info2">{{result[0].productInfo1}}</p>
+            <div class="img">
+                {{#result[0].productImgLg}}
+            </div>
+            <div class="productCity">
+                {{#result[0].productCity}}
+            </div>
+            <div class="fixed">
+                <a href="">前往购买</a>
+            </div>
+            <div class="imgSaoMa">
+                <img src="images/mmbweixin2.png" alt="liele"/>
+            </div>
+
+            {{#result[0].productComment}}
+    </script>
+</section>
+<!--产品布局-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--尾部区域-->
+<footer class="clearfix">
+    <ul class="clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#">返回顶部</a></li>
+    </ul>
+    <p><a href="#">手机APP下载</a>
+        <a href="">慢慢买手机版</a>
+        -- 掌上比价平台
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+<!--尾部区域-->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template.js"></script>
+<script src="js/common.js"></script>
+<script src="js/common/route.js"></script>
+<script src="js/moneyproduct.js"></script>
+</body>
+</html>
